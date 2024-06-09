@@ -15,6 +15,15 @@ string obtenerPrimeraPalabra (string str){
     return str.substr(0, pos);
 }
 
+string eliminarPrimeraPalabra(string cadena){
+    string abc ="qwertyuiopasdfghjklñ zxcvbnmQWERTYUIOPASDFGHJKLÑ ZXCVBNM+-";
+    while(0 < cadena.size() && abc.find(cadeba[0]) == string::npos){
+        cadena.erase(0,1);
+    }
+    int pos = cadena.find(' ')
+    cadena.erase(0,pos);
+    return cadena;
+}
 
 
 int main(){
@@ -34,6 +43,7 @@ int main(){
 
         comando = obtenerPrimeraPalabra (opcion);
 
+        comando = eliminarPrimeraPalabra (opcion);
     } 
 
 
