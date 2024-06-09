@@ -25,6 +25,17 @@ string eliminarPrimeraPalabra(string cadena){
     return cadena;
 }
 
+string obtenerFecha(string cadena){
+    string abc ="1234567890+-";
+    while(0 < cadena.size() && abc.find(cadena[0]) == string::npos){
+        cadena.erase(0,1);
+    }
+    int pos = cadena.find(' ');
+    if(pos == string::npos){
+        return cadena;
+    }
+    return cadena.substr(0,pos);
+}
 
 int main(){
     string opcion, comando, evento ,fecha;
@@ -43,7 +54,9 @@ int main(){
 
         comando = obtenerPrimeraPalabra (opcion);
 
-        comando = eliminarPrimeraPalabra (opcion);
+        opcion = eliminarPrimeraPalabra (opcion);
+
+        fechas = obtenerFecha (opcion);
     } 
 
 
