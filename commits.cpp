@@ -3,7 +3,17 @@
 
 using namespace std;
 
-
+string obtenerPrimeraPalabra (string str){
+    string abc = "qwertyuiopasdfghjkl  zxcvbnmQWERTYUIOPASDFGHJKL ZXCVBNM";
+    while(0 < str.size() && abc.find(str[0]) == string::npos){
+        str.erase(0,1); //elimina los espacios hacia la izquierda
+    }
+    int pos = str.find(' ');
+    if(pos == string::npos){
+        return str;
+    }
+    return str.substr(0, pos);
+}
 
 
 
