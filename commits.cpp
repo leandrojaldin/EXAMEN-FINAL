@@ -14,6 +14,30 @@ void pausar(){
     getch();
     system("cls");
 }
+/*
+funcion agregar evento
+nueva fceha y vento: Add 2021-10-05 cumple   
+id 1: 2021-10-05 bautizo
+id 2: 2020-10-15 graduacion 
+id 3: 2019-05-26 reunion 
+inicamos en false porque uasumimos que no hay igual de fecha y evento
+for(itera sobre cada uno desde el principi hasa el final)
+if(comprubea entrando a las corrdendas cero y uno del vector cero= fecha uno= evento)
+
+
+*/
+void agregarEvento(Int id, string fecha, string nombreEvento){
+    bool bandera = false;
+    for(auto i = mapa1.begin(); i != mapa1.end; ++i){
+        //en el fi que vemos accderemos a la fecha y nombre del evento atra vez de la posicion
+        if(i -> second[0] == fecha && i-> second[1] == nombreEvento){
+            bandera = true;
+            break;
+        }
+    }
+    if(!bandera)
+        mapa1[id] = {fecha, nombreEvento};
+}
 
 
 string obtenerPrimeraPalabra (string str){
