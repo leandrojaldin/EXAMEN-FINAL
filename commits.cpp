@@ -90,16 +90,17 @@ int main(){
         cout<<" Escriba su opcion: ";
         getline(cin, opcion); //para leer toda la linea
         cout<<"\n";
-
+        //Add 2024-05-29 cumple
         comando = obtenerPrimeraPalabra (opcion);
-
+       //Add
         opcion = eliminarPrimeraPalabra (opcion);
-
+       //2024-05-29  cumple
         fechas = obtenerFecha (opcion);
-        
-        opcion = eliminarPrimeraPalabra(opcion0);
-
+        //2024-05-29 
+        opcion = eliminarPrimeraPalabra(opcion);
+        //cumple
         evento = obtenerPrimeraPalabra(opcion);
+        //cumple
     } 
 
 
