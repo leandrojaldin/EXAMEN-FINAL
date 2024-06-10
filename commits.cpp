@@ -23,7 +23,8 @@ id 3: 2019-05-26 reunion
 inicamos en false porque uasumimos que no hay igual de fecha y evento
 for(itera sobre cada uno desde el principi hasa el final)
 if(comprubea entrando a las corrdendas cero y uno del vector cero= fecha uno= evento)
-
+este if compara en caso que se hallen fecha y nombre del evento se establece en true 
+y se cierra el bucle
 
 */
 void agregarEvento(Int id, string fecha, string nombreEvento){
@@ -38,6 +39,7 @@ void agregarEvento(Int id, string fecha, string nombreEvento){
     if(!bandera)
         mapa1[id] = {fecha, nombreEvento};
 }
+void imprimir(){}
 
 
 string obtenerPrimeraPalabra (string str){
@@ -94,7 +96,10 @@ int main(){
         opcion = eliminarPrimeraPalabra (opcion);
 
         fechas = obtenerFecha (opcion);
+        
+        opcion = eliminarPrimeraPalabra(opcion0);
 
+        evento = obtenerPrimeraPalabra(opcion);
     } 
 
 
