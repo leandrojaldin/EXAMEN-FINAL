@@ -5,7 +5,7 @@
 #include <map>
 
 using namespace std;
-map<int, vector<string> > mapa1;
+map<int, vector<string>> mapa1;
 
 
 //pendiente void pausar
@@ -78,7 +78,7 @@ string obtenerFecha(string cadena){
 
 int main(){
     string opcion, comando, evento ,fecha;
-
+    int identificadorUnico = 1;
     do{
         cout<<"\t\t\t\t   Registro de eventos   \t\t\t\t \n\n";
         cout<<" Para agregar un evento usa el comando: Add \n\n";
@@ -101,7 +101,14 @@ int main(){
         //cumple
         evento = obtenerPrimeraPalabra(opcion);
         //cumple
-    } 
+
+        if(comando == "Add"){
+            agregarEvento(identificadorUnico, fecha, evento);
+            identificadorUnico += 1;
+        }
+
+
+    } while(!comando != "Salir");
 
 
 
