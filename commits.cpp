@@ -1,7 +1,20 @@
 #include<iostream>
-#include <string>
+#include <string.h>
+#include <conio.h> //getch()
+#include <vector>
+#include <map>
 
 using namespace std;
+map<int, vector<string> > mapa1;
+
+
+//pendiente void pausar
+void pausar(){
+    cout<<"Precione Enter para pausar....";
+    getch();
+    system("cls");
+}
+
 
 string obtenerPrimeraPalabra (string str){
     string abc = "qwertyuiopasdfghjkl  zxcvbnmQWERTYUIOPASDFGHJKL ZXCVBNM";
@@ -57,7 +70,9 @@ int main(){
         opcion = eliminarPrimeraPalabra (opcion);
 
         fechas = obtenerFecha (opcion);
+
     } 
+
 
 
     return 0;
