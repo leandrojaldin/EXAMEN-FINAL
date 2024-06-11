@@ -1,6 +1,5 @@
 #include<iostream>
-#include <string.h>
-#include <conio.h> //getch()
+#include <string>
 #include <vector>
 #include <map>
 
@@ -11,8 +10,7 @@ map<int, vector<string>> mapa1;
 //pendiente void pausar
 void pausar(){
     cout<<"Precione Enter para pausar....";
-    getch();
-    system("cls");
+    system("cls"); 
 }
 /*
 funcion agregar evento
