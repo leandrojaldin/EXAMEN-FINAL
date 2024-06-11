@@ -36,8 +36,12 @@ void agregarEvento(Int id, string fecha, string nombreEvento){
             break;
         }
     }
-    if(!bandera)
+    if(!bandera){
         mapa1[id] = {fecha, nombreEvento};
+        cout<<"Evento agregado correctamente";
+    }else{
+        cout<<"Ya existe un evento con esa fecha y nombre";
+    }
 }
 void imprimir(){}
 
