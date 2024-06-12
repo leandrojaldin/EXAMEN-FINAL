@@ -28,6 +28,17 @@ void agregarEvento (int id, string fecha, string nombreEvento){
         cout<<"Ya existe un evento con el mismo nombre y fecha";
     }
 }
+
+void imprimir (){
+    if(mapa1.empty()){
+        cout<<"No hay eventos\n";
+    }else{
+        cout<<"Imprimiendo eventos:\n ";
+        for(auto i = mapa1.begin(); i != mapa1.end(); ++i){
+            cout<<i -> second[0]<<" | "<<i -> second[1]<<"\n";
+        }
+    }
+}
 /*
 funcion agregar evento
 nueva fceha y vento: Add 2021-10-05 cumple   
