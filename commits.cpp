@@ -10,7 +10,18 @@ map<int, vector<string>> mapa1;
 //pendiente void pausar
 void pausar(){
     cout<<"Precione Enter para pausar....";
-    system("cls"); 
+    cin.ignore() // Limpia la entrada y no vemos las entradas pasadas 
+    cin.get() // espera el progama para que precione enter 
+}
+void agregarEvento (int id, string fecha, string nombreEvento){
+    bool bandera = false;
+    for(auto i = mapa1.begin(); i != mapa1.end(); i++){
+        if(i -> second[0] == fecha; i -> second[1] == nombreEvento){
+            bandera = true;
+            break;
+        }
+    }
+    }
 }
 /*
 funcion agregar evento
