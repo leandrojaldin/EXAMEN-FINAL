@@ -35,7 +35,7 @@ void imprimir (){
     }else{
         cout<<"Imprimiendo eventos:\n ";
         for(auto i = mapa1.begin(); i != mapa1.end(); ++i){
-            cout<<i -> second[0]<<" | "<<i -> second[1];
+            cout<<i -> second[0]<<" | "<<i -> second[1]<<"\n";
         }
     }
 }
@@ -68,7 +68,16 @@ void agregarEvento(Int id, string fecha, string nombreEvento){
         cout<<"Ya existe un evento con esa fecha y nombre\n";
     }
 }
-void imprimir(){}
+void imprimir(){
+    if(mapa1.empty()){
+        cout<<"No hay eventos\n";
+    }else{
+        cout<<"Imprimiendo eventos:\n";
+        for(auto i = mapa1.begin(); i != mapa1.end(); ++i){
+            cout<<i -> second[0]<<" | "<<i -> second[1]<<"\n";
+        }
+    }
+}
 
 
 string obtenerPrimeraPalabra (string str){
@@ -134,6 +143,9 @@ int main(){
         if(comando == "Add"){
             agregarEvento(identificadorUnico, fecha, evento);
             identificadorUnico += 1;
+        }else if(){
+        }else if(comando == "Print"){
+            imprimir();
         }
 
 
