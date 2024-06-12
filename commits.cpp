@@ -35,7 +35,7 @@ void imprimir (){
     }else{
         cout<<"Imprimiendo eventos:\n ";
         for(auto i = mapa1.begin(); i != mapa1.end(); ++i){
-            cout<<i -> second[0]<<" | "<<i -> second[1]<<"\n";
+            cout<<i -> second[0]<<" | "<<i -> second[1];
         }
     }
 }
