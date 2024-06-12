@@ -18,7 +18,7 @@ void agregarEvento (int id, string fecha, string nombreEvento){
     for(auto i = mapa1.begin(); i != mapa1.end(); i++){
         if(i -> second[0] == fecha; i -> second[1] == nombreEvento){
             bandera = true;
-            break;
+            break; 
         }
     }
     }
