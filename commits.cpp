@@ -144,8 +144,7 @@ int main(){
             agregarEvento(identificadorUnico, fecha, evento);
             identificadorUnico += 1;
         }else if(){
-        }else if(comando == "Print"){
-            imprimir();
+        }
         }
 
 
