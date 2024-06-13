@@ -49,8 +49,13 @@ void eliminarEvento(string fecha, string evento){
     for(auto i = mapa1.begin(); i != mapa1.end(); ++i){
         if(i -> second[0] == fecha && i -> second[1] == evento){
             mapa1.erase(i);
-            cout<<"Se elimino correctamente"
+            cout<<"Se eliminó correctamente";
+            bandera = true;
+            break;
         }
+    }
+    if(!bandera){
+        cout<<"El evento no se encontró";
     }
 }
 
