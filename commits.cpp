@@ -134,7 +134,8 @@ int main(){
         if(comando == "Add"){
             agregarEvento(identificadorUnico, fecha, evento);
             identificadorUnico += 1;
-        }else if(){
+        }else if(comando == "Del"){
+            eliminarEvento(fechas,evento);
         }else if(comando == "Print"){
             imprimir();
         }
