@@ -138,7 +138,10 @@ int main(){
             eliminarEvento(fechas,evento);
         }else if(comando == "Print"){
             imprimir(); 
+        }else{
+            cout<<"Prueba de salida";
         }
+        pausar();
 
 
     } while(!comando != "Salir");
