@@ -137,7 +137,7 @@ int main(){
         }else if(comando == "Del"){
             eliminarEvento(fechas,evento);
         }else if(comando == "Print"){
-            imprimir();
+            imprimir(); 
         }
 
 
