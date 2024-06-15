@@ -146,8 +146,8 @@ int main(){
             eliminarEvento(fechas,evento);
         }else if(comando == "Print"){
             imprimir(); 
-        }else if(comando == "Print"){
-            imprimir();
+        }else if(comando == "Find"){
+            buscarEventosConFecha();
         }else{
             cout<<"Prueba de salida";
         }
