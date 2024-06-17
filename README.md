@@ -4,7 +4,7 @@
 1.  El Problema
 
 
-En el contexto de nuestro proyecto, hemos sido asignados como desarrolladores de C++ en una empresa para crear un modelo de base de datos simple. El objetivo principal de este proyecto es implementar un sistema de gestión de eventos que permita almacenar, buscar y manipular datos de eventos asociados a fechas específicas. La importancia de este proyecto radica en la necesidad de una solución eficiente y manejable para registrar y consultar eventos, lo cual puede ser crucial para diversas aplicaciones, desde la gestión personal hasta el seguimiento de proyectos empresariales.
+En el contexto de nuestro proyecto, hemos sido asignados como desarrolladores de C++ en una empresa para crear un modelo de base de datos simple. El objetivo principal de este proyecto es implementar un sistema de gestión de eventos que permita almacenar, buscar y manipular datos de eventos asociados a fechas específicas. La importancia de este proyecto radica en la necesidad de una solución eficiente y manejable para añadir, eliminar,econtrar, imprimir eventos, lo cual puede ser crucial para diversas aplicaciones, desde la gestión personal hasta el seguimiento de proyectos empresariales.
 
 Problema Específico:
 
@@ -29,7 +29,7 @@ Registrar y recordar eventos importantes sin preocuparse por duplicados.
 
             Imprimir todos los eventos almacenados, organizados por fecha, para una fácil revisión.
 
-            Al abordar estos problemas, esperamos proporcionar una solución eficiente y fácil de usar que mejore la productividad y la gestión del tiempo para los usuarios finales.
+            Al abordar estos problemas, esperamos proporcionar una solución eficiente y fácil de usar que mejore la gestión del tiempo para los usuarios.
 
 
 2. Explicacion de base de datos existentes, comparativa y justificacion de este nuevo desarrollo.
