@@ -82,14 +82,14 @@ string obtenerPrimeraPalabra(string str){
     return str.substr(0, pos); // devuelve la palbara hasta el primer espacio 
 }                              // detecta el comando utilizado
 
-string eliminarPrimeraPalabra(string cadena){    //para recivir un string 
-    string abc="qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890-+";
-    while(0 < cadena.size() && abc.find(cadena[0]) == string::npos){
-        cadena.erase(0,1);
+string eliminarPrimeraPalabra(string cadena) {
+    size_t pos = cadena.find(' ');
+    if (pos != string::npos) {
+        cadena = cadena.substr(pos + 1);
+    } else {
+        cadena = "";
     }
-    int pos =  cadena.find(' ');
-    cadena.erase(0,pos);
-    return cadena;  
+    return cadena;
 }
 
 string obtenerLafecha(string cadena){
@@ -108,7 +108,6 @@ int main(){
     string opcion, comando, evento, fechas;
     int identificadorUnico = 1;
     do{
-        system("cls");
         cout<<"\t\t\t\t   Registro de eventos   \t\t\t\t \n\n";
         cout<<"Para agregar un nuevo evento se uda el comando: Add\n\n";
         cout<<"para eliminar evento se usa el comando: Del \n\n";
