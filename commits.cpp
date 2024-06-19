@@ -130,7 +130,7 @@ int main(){
        //Add
         opcion = eliminarPrimeraPalabra (opcion);
        //2024-05-29  cumple
-        fechas = obtenerFecha (opcion);
+        fecha = obtenerFecha (opcion);
         //2024-05-29 
         opcion = eliminarPrimeraPalabra(opcion);
         //cumple
@@ -141,11 +141,11 @@ int main(){
             agregarEvento(identificadorUnico, fecha, evento);
             identificadorUnico += 1;
         }else if(comando == "Del"){
-            eliminarEvento(fechas,evento);
+            eliminarEvento(fecha,evento);
         }else if(comando == "Print"){
             imprimir(); 
         }else if(comando == "Find"){
-            buscarEventosConFecha(fechas);
+            buscarEventosConFecha(fecha);
         }else{
             cout<<"comando incorrecto";
         }
