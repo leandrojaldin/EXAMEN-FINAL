@@ -6,12 +6,10 @@
 using namespace std;
 map<int, vector<string>> mapa1;
 
-
-//pendiente void pausar
 void pausar(){
     cout<<"Precione Enter para pausar....";
-    cin.ignore() // Limpia la entrada y no vemos las entradas pasadas 
-    cin.get() // espera el progama para que precione enter 
+    cin.ignore(); // Limpia la entrada y no vemos las entradas pasadas 
+    cin.get(); // espera el progama para que precione enter 
 }
 
 /*
@@ -27,9 +25,9 @@ este if compara en caso que se hallen fecha y nombre del evento se establece en 
 y se cierra el bucle
 
 */
-void agregarEvento(Int id, string fecha, string nombreEvento){
+void agregarEvento(int id, string fecha, string nombreEvento){
     bool bandera = false;
-    for(auto i = mapa1.begin(); i != mapa1.end; ++i){
+    for(auto i = mapa1.begin(); i != mapa1.end(); ++i){
         //en el fi que vemos accderemos a la fecha y nombre del evento atra vez de la posicion
         if(i -> second[0] == fecha && i-> second[1] == nombreEvento){
             bandera = true;
@@ -91,12 +89,12 @@ string obtenerPrimeraPalabra (string str){
     return str.substr(0, pos);
 }
 
-string eliminarPrimeraPalabra(string cadena) {
+string eliminarPrimeraPalabra(string cadena){
     size_t pos = cadena.find(' ');
-    if (pos != string::npos) {
-        cadena = cadena.substr(pos + 1);
-    } else {
-        cadena = "";
+    if(pos != string::npos){
+        cadena = cadena.substr(pos + 1);  
+    }else{
+        cadena="";
     }
     return cadena;
 }
@@ -147,9 +145,9 @@ int main(){
         }else if(comando == "Print"){
             imprimir(); 
         }else if(comando == "Find"){
-            buscarEventosConFecha();
+            buscarEventosConFecha(fechas);
         }else{
-            cout<<"Prueba de salida";
+            cout<<"comando incorrecto";
         }
         pausar();   
 
