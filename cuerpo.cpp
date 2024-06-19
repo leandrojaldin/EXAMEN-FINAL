@@ -74,14 +74,14 @@ string obtenerPrimeraPalabra(string str){
     return str.substr(0, pos); // devuelve la palbara hasta el primer espacio 
 }                              // detecta el comando utilizado
 
-string eliminarPrimeraPalabra(string cadena){    //para recivir un string 
-    string abc="qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890-+";
-    while(0 < cadena.size() && abc.find(cadena[0]) == string::npos){
-        cadena.erase(0,1);
+string eliminarPrimeraPalabra(string cadena) {
+    size_t pos = cadena.find(' ');
+    if (pos != string::npos) {
+        cadena = cadena.substr(pos + 1);
+    } else {
+        cadena = "";
     }
-    int pos =  cadena.find(' ');
-    cadena.erase(0,pos);
-    return cadena;  
+    return cadena;
 }
 
 string obtenerLafecha(string cadena){
