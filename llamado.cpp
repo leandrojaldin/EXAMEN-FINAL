@@ -3,7 +3,6 @@ int main(){
     string opcion, comando, evento, fechas;
     int identificadorUnico = 1;
     do{
-        system("cls");
         cout<<"\t\t\t\t   Registro de eventos   \t\t\t\t \n\n";
         cout<<"Para agregar un nuevo evento se uda el comando: Add\n\n";
         cout<<"para eliminar evento se usa el comando: Del \n\n";
