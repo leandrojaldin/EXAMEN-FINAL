@@ -13,7 +13,7 @@ map<int, vector<string>>mapa1;
 void pausar();
 void agregarEvento(int id, string fecha, string nombreEvento);
 void eliminarEvento(string fecha, string evento);
-void buscarEventoConFecha(string fecha);
+void buscarEventoConFecha(string fecha,string evento);
 void imprimir();
 
 string obtenerPrimeraPalabra(string str);
