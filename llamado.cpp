@@ -1,6 +1,6 @@
 #include "cuerpo.cpp"
 int main(){
-    string opcion, comando, evento, fechas;
+    string opcion, comando, evento, fecha;
     int identificadorUnico = 1;
     do{
         cout<<"\t\t\t\t   Registro de eventos   \t\t\t\t \n\n";
@@ -20,7 +20,7 @@ int main(){
         // comando = Add
         opcion = eliminarPrimeraPalabra(opcion); 
         // opcion = 1212-12-12 cumple
-        fechas = obtenerLafecha(opcion);  //para obtener la fecha;
+        fecha = obtenerLafecha(opcion);  //para obtener la fecha;
         // fechas = 1212-12-12
         opcion = eliminarPrimeraPalabra(opcion);
         // opcion = cumple
@@ -28,15 +28,15 @@ int main(){
         // evento = cumple 
 
         if(comando == "Add"){
-            agregarEvento(identificadorUnico, fechas, evento);
+            agregarEvento(identificadorUnico, fecha, evento);
             identificadorUnico +=  1;
         
         }else if(comando == "Del"){
-            eliminarEvento(fechas,evento);
+            eliminarEvento(fecha,evento);
         }else if(comando == "Print"){
             imprimir();
         }else if(comando == "Find"){
-            buscarEventoConFecha(fechas);
+            buscarEventoConFecha(fecha,evento);
         }else{
             cout<<"Comando Incorrecto";
         }
