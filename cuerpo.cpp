@@ -37,11 +37,16 @@ void eliminarEvento(string fecha, string evento){
 
 }
 
-void buscarEventoConFecha(string fecha){
+void buscarEventoConFecha(string fecha, string evento){
+    bool encontrado = false;
     for(auto i = mapa1.begin(); i != mapa1.end(); ++i){
         if(i -> second[0] == fecha){
             cout<<i -> second[0]<< "|" << i -> second[1]<<"\n";
+            encontrado = true;
         }
+    }
+    if(!encontrado){
+        cout<<"No se econtro el evento\n";
     }
 }
 
@@ -63,7 +68,7 @@ void imprimir() {
 }
 
 string obtenerPrimeraPalabra(string str){
-    string abc="qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";
+    string abc ="qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";
     while(0 < str.size() && abc.find(str[0]) == string::npos){
         str.erase(0,1);
     }
