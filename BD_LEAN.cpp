@@ -45,11 +45,16 @@ void eliminarEvento(string fecha, string evento){
 
 }
 
-void buscarEventoConFecha(string fecha){
+void buscarEventoConFecha(string fecha, string evento){
+    bool encontrado = false;
     for(auto i = mapa1.begin(); i != mapa1.end(); ++i){
         if(i -> second[0] == fecha){
             cout<<i -> second[0]<< "|" << i -> second[1]<<"\n";
+            encontrado = true;
         }
+    }
+    if(!encontrado){
+        cout<<"No se econtro el evento\n";
     }
 }
 
@@ -141,7 +146,7 @@ int main(){
         }else if(comando == "Print"){
             imprimir();
         }else if(comando == "Find"){
-            buscarEventoConFecha(fecha);
+            buscarEventoConFecha(fecha, evento);
         }else{
             cout<<"Comando Incorrecto";
         }
